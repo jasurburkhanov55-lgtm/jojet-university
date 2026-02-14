@@ -69,22 +69,22 @@ export default function About() {
     {
       name: 'Dr. John Smith',
       position: 'President',
-      image: '/campus-1.jpg',
+      image: 'campus-1.jpg',
     },
     {
       name: 'Dr. Sarah Johnson',
       position: 'Vice President for Academic Affairs',
-      image: '/campus-2.jpg',
+      image: 'campus-2.jpg',
     },
     {
       name: 'Prof. Michael Chen',
       position: 'Vice President for Research',
-      image: '/campus-3.jpg',
+      image: 'campus-3.jpg',
     },
     {
       name: 'Dr. Emily Davis',
       position: 'Vice President for Student Affairs',
-      image: '/campus-4.jpg',
+      image: 'campus-4.jpg',
     },
   ];
 
