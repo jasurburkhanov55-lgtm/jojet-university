@@ -202,7 +202,7 @@ export default function Academics() {
             </div>
             <div className="relative">
               <img 
-                src="/campus-3.jpg" 
+                src="campus-3.jpg" 
                 alt="Research at JIU" 
                 className="rounded-xl shadow-lg"
               />
