@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&family=Noto+Serif:wght@400;500;600;700&family=Open+Sans:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 20%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 20%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 20%;
+    --primary: 222 66% 32%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 0 0% 97%;
+    --secondary-foreground: 0 0% 20%;
+    --muted: 0 0% 97%;
+    --muted-foreground: 0 0% 40%;
+    --accent: 42 100% 30%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 92%;
+    --input: 0 0% 92%;
+    --ring: 222 66% 32%;
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply bg-white text-gray-800 antialiased;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Noto Serif', serif;
+    font-weight: 600;
+  }
+}
+
+@layer components {
+  /* Header styles */
+  .header-top-bar {
+    @apply bg-jojet-blue text-white py-2;
+  }
+  
+  .header-main {
+    @apply bg-white shadow-header;
+  }
+  
+  .nav-link {
+    @apply text-gray-700 hover:text-jojet-blue transition-colors duration-200 font-medium;
+  }
+  
+  .nav-link-active {
+    @apply text-jojet-blue;
+  }
+  
+  /* Button styles */
+  .btn-primary {
+    @apply bg-jojet-blue text-white px-6 py-2.5 rounded font-medium hover:bg-jojet-blue-dark transition-colors duration-200;
+  }
+  
+  .btn-accent {
+    @apply bg-jojet-gold text-white px-6 py-2.5 rounded font-medium hover:bg-jojet-gold-dark transition-colors duration-200;
+  }
+  
+  .btn-outline {
+    @apply border-2 border-jojet-blue text-jojet-blue px-6 py-2 rounded font-medium hover:bg-jojet-blue hover:text-white transition-colors duration-200;
+  }
+  
+  /* Section styles */
+  .section-title {
+    @apply text-2xl md:text-3xl font-bold text-gray-800 mb-6;
+    font-family: 'Noto Serif', serif;
+  }
+  
+  .section-subtitle {
+    @apply text-jojet-gold font-medium text-sm uppercase tracking-wider mb-2;
+  }
+  
+  /* Card styles */
+  .card {
+    @apply bg-white rounded-lg shadow-sm border border-gray-100 overflow-hidden hover:shadow-md transition-shadow duration-300;
+  }
+  
+  /* Language switcher */
+  .lang-link {
+    @apply text-white/80 hover:text-white text-sm transition-colors duration-200;
+  }
+  
+  .lang-link-active {
+    @apply text-jojet-gold-light font-semibold;
+  }
+  
+  /* Dropdown menu */
+  .dropdown-menu {
+    @apply absolute top-full left-0 bg-white shadow-lg rounded-b-lg min-w-[200px] py-2 opacity-0 invisible transition-all duration-200 z-50;
+  }
+  
+  .dropdown-trigger:hover .dropdown-menu {
+    @apply opacity-100 visible;
+  }
+  
+  .dropdown-item {
+    @apply block px-4 py-2 text-gray-700 hover:bg-jojet-gray hover:text-jojet-blue transition-colors duration-200;
+  }
+  
+  /* Hero section */
+  .hero-overlay {
+    @apply absolute inset-0 bg-gradient-to-r from-jojet-blue/80 to-jojet-blue/40;
+  }
+  
+  /* Stats counter */
+  .stat-number {
+    @apply text-4xl md:text-5xl font-bold text-jojet-blue;
+    font-family: 'Noto Serif', serif;
+  }
+  
+  .stat-label {
+    @apply text-gray-600 text-sm mt-1;
+  }
+  
+  /* News card */
+  .news-card {
+    @apply relative overflow-hidden rounded-lg;
+  }
+  
+  .news-card-image {
+    @apply w-full h-full object-cover transition-transform duration-500 group-hover:scale-110;
+  }
+  
+  .news-card-overlay {
+    @apply absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent;
+  }
+  
+  .news-card-content {
+    @apply absolute bottom-0 left-0 right-0 p-4 text-white;
+  }
+  
+  /* Campus slider */
+  .campus-slide {
+    @apply relative h-[400px] md:h-[500px] overflow-hidden;
+  }
+  
+  .campus-slide-caption {
+    @apply absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-6 text-white;
+  }
+  
+  /* Footer */
+  .footer {
+    @apply bg-gray-900 text-white;
+  }
+  
+  .footer-link {
+    @apply text-gray-400 hover:text-jojet-gold-light transition-colors duration-200;
+  }
+  
+  /* Form styles */
+  .form-input {
+    @apply w-full px-4 py-3 border border-gray-300 rounded focus:outline-none focus:border-jojet-blue focus:ring-1 focus:ring-jojet-blue transition-colors duration-200;
+  }
+  
+  .form-label {
+    @apply block text-sm font-medium text-gray-700 mb-1;
+  }
+  
+  /* Page header */
+  .page-header {
+    @apply relative bg-jojet-blue py-16 md:py-24;
+  }
+  
+  .page-header-title {
+    @apply text-3xl md:text-4xl font-bold text-white;
+    font-family: 'Noto Serif', serif;
+  }
+  
+  /* Breadcrumb */
+  .breadcrumb {
+    @apply flex items-center gap-2 text-sm text-white/70;
+  }
+  
+  .breadcrumb a {
+    @apply hover:text-white transition-colors duration-200;
+  }
+  
+  /* Quick links */
+  .quick-link-btn {
+    @apply flex flex-col items-center justify-center p-6 bg-white rounded-lg shadow-sm border border-gray-100 hover:shadow-md hover:border-jojet-blue/30 transition-all duration-300;
+  }
+  
+  .quick-link-icon {
+    @apply w-12 h-12 bg-jojet-blue/10 rounded-full flex items-center justify-center text-jojet-blue mb-3;
+  }
+  
+  /* Timeline */
+  .timeline-item {
+    @apply relative pl-8 pb-8 border-l-2 border-jojet-blue/30 last:pb-0;
+  }
+  
+  .timeline-dot {
+    @apply absolute left-0 top-0 w-4 h-4 bg-jojet-blue rounded-full -translate-x-[9px];
+  }
+  
+  /* Mobile menu */
+  .mobile-menu {
+    @apply fixed inset-0 bg-white z-50 transform translate-x-full transition-transform duration-300;
+  }
+  
+  .mobile-menu-open {
+    @apply translate-x-0;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  
+  .animation-delay-100 {
+    animation-delay: 100ms;
+  }
+  
+  .animation-delay-200 {
+    animation-delay: 200ms;
+  }
+  
+  .animation-delay-300 {
+    animation-delay: 300ms;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1b3b86;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #142c66;
+}
+
+/* Selection color */
+::selection {
+  background: #1b3b86;
+  color: white;
+}
