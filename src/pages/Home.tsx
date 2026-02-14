@@ -59,28 +59,28 @@ export default function Home({ onPageChange }: HomeProps) {
   const newsItems = [
     {
       id: 1,
-      image: '/news-1.jpg',
+      image: 'news-1.jpg',
       title: 'JIU Hosts International Academic Conference 2024',
       date: '2024-01-15',
       featured: true,
     },
     {
       id: 2,
-      image: '/news-2.jpg',
+      image: 'news-2.jpg',
       title: 'Scholarship Awards Ceremony Celebrates Excellence',
       date: '2024-01-10',
       featured: false,
     },
     {
       id: 3,
-      image: '/news-3.jpg',
+      image: 'news-3.jpg',
       title: 'New Student Housing Complex Opens',
       date: '2024-01-05',
       featured: false,
     },
     {
       id: 4,
-      image: '/news-4.jpg',
+      image: 'news-4.jpg',
       title: 'Cultural Festival Brings Global Community Together',
       date: '2024-01-01',
       featured: false,
@@ -89,10 +89,10 @@ export default function Home({ onPageChange }: HomeProps) {
 
   // Campus slides
   const campusSlides = [
-    { image: '/campus-1.jpg', title: 'Graduation Ceremony', description: 'Celebrating our graduates success' },
-    { image: '/campus-2.jpg', title: 'University Library', description: 'State-of-the-art learning facilities' },
-    { image: '/campus-3.jpg', title: 'Research Laboratories', description: 'Cutting-edge research equipment' },
-    { image: '/campus-4.jpg', title: 'Sports Complex', description: 'Modern athletic facilities' },
+    { image: 'campus-1.jpg', title: 'Graduation Ceremony', description: 'Celebrating our graduates success' },
+    { image: 'campus-2.jpg', title: 'University Library', description: 'State-of-the-art learning facilities' },
+    { image: 'campus-3.jpg', title: 'Research Laboratories', description: 'Cutting-edge research equipment' },
+    { image: 'campus-4.jpg', title: 'Sports Complex', description: 'Modern athletic facilities' },
   ];
 
   // User types for quick links
@@ -167,7 +167,7 @@ export default function Home({ onPageChange }: HomeProps) {
       {/* Hero Section */}
       <section className="relative h-[500px] md:h-[600px] overflow-hidden">
         <img 
-          src="/hero-bg.jpg" 
+          src="hero-bg.jpg" 
           alt="Jojet International University" 
           className="w-full h-full object-cover"
         />
