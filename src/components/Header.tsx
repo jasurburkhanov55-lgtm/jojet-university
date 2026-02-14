@@ -123,7 +123,7 @@ export default function Header({ currentPage, onPageChange }: HeaderProps) {
               className="flex items-center gap-3"
             >
               <img 
-                src="/logo.png" 
+                src="logo.png" 
                 alt="Jojet International University" 
                 className="h-10 md:h-12 w-auto"
               />
