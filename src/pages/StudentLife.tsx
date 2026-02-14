@@ -106,8 +106,8 @@ export default function StudentLife() {
               </p>
             </div>
             <div className="grid grid-cols-2 gap-4">
-              <img src="/campus-1.jpg" alt="Campus Life" className="rounded-xl shadow-lg" />
-              <img src="/campus-2.jpg" alt="Student Activities" className="rounded-xl shadow-lg mt-8" />
+              <img src="campus-1.jpg" alt="Campus Life" className="rounded-xl shadow-lg" />
+              <img src="campus-2.jpg" alt="Student Activities" className="rounded-xl shadow-lg mt-8" />
             </div>
           </div>
         </div>
@@ -142,7 +142,7 @@ export default function StudentLife() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="order-2 lg:order-1">
-              <img src="/news-3.jpg" alt="Student Housing" className="rounded-xl shadow-lg" />
+              <img src="news-3.jpg" alt="Student Housing" className="rounded-xl shadow-lg" />
             </div>
             <div className="order-1 lg:order-2">
               <p className="section-subtitle">Accommodation</p>
