@@ -122,7 +122,7 @@ export default function About() {
             </div>
             <div className="relative">
               <img 
-                src="/hero-bg.jpg" 
+                src="hero-bg.jpg" 
                 alt="Jojet International University Campus" 
                 className="rounded-xl shadow-lg"
               />
