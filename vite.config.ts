@@ -5,7 +5,7 @@ import { inspectAttr } from 'kimi-plugin-inspect-react'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: '/jojet-university/',
+  base: 'https://jasurburkhanov55-lgtm.github.io/jojet-university/',
   plugins: [inspectAttr(), react()],
   resolve: {
     alias: {
