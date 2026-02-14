@@ -31,7 +31,7 @@ export default function Footer({ onPageChange }: FooterProps) {
           {/* Logo & Description */}
           <div className="lg:col-span-1">
             <div className="flex items-center gap-3 mb-4">
-              <img src="/logo.png" alt="JIU" className="h-12 w-auto" />
+              <img src="logo.png" alt="JIU" className="h-12 w-auto" />
               <div>
                 <div className="font-bold text-lg">JOJET</div>
                 <div className="text-jojet-gold text-xs">INTERNATIONAL</div>
